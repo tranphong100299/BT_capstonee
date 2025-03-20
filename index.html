@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pinwheel-tailwind</title>
-    <link rel="stylesheet" href="./src/output.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,6 +14,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"
+/>
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"
+/>
+
+
+<link rel="stylesheet" href="./src/output.css">
 </head>
 <body class="bg-[#fafafa] bg-[url('/img/body-bg.svg')]">
     <header class="bg-transparent py-6 px-0 font-[Poppins]">
@@ -229,11 +246,11 @@
                   </div>
                 </div>
                 <div class="mt-6 lg:col-5 lg:mt-0 ">
-                  <div class="max-w-[1202px] pl-[150px]">
+                  <div class="max-w-[1202px]">
                     <h2 class="lg:text-4xl font-[Merriweather] font-bold">
                       Accept payments any country in this whole universe
                     </h2>
-                    <p class="mt-4 font-[Poppins]">
+                    <p class="mt-4 font-[Poppins]  text-[#888888]">
                       Donec sollicitudin molestie malesda. Donec<br> sollitudin molestie
                       malesuada. Mauris pellentesque nec, egestas non nisi. Cras ultricies
                       ligula sed
@@ -255,9 +272,9 @@
                   </div>
                 </div>
               </div>
-              <div class="flex mt-12 items-center">
+              <div class="flex mt-12 items-center justify-between">
                 <div class="lg:col-7 lg:order-2">
-                  <div class="video pb-5 pr-9 pl-7">
+                  <div class="video pb-5">
                     <div class="video-thumbnail overflow-hidden rounded-2xl">
                       <img class="w-full object-contain" src="/img/intro-thumbnail.png" alt="">
                       <button class="video-play-btn">
@@ -267,15 +284,14 @@
                     <div class="video-player absolute left-0 top-0 z-10 hidden h-full w-full">
                       <iframe class="h-full w-full" allowfullscreen="" src="https://www.youtube.com/embed/g3-VxLQO7do?autoplay=1"></iframe>
                     </div>
-                    <!-- <img class="intro-shape absolute bottom-0 right-0 -z-[1]" src="/img/shape.svg" alt=""> -->
                   </div>
                 </div>
-                <div class="mt-6 lg:col-5 lg:order-1 lg:mt-0 w-[40%] pl-4">
+                <div class="mt-6 lg:col-5 lg:order-1 lg:mt-0 w-[50%] pl-7">
                   <div class="max-w-[1202px]">
-                    <h2 class="lg:text-4xl font-[Merriweather] font-bold mb-[4px]">Accountability that works for you</h2>
-                    <p class="mt-4 font-[Poppins] leading-[26px]">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-                      egestas Werat viverra id et aliquet. vulputate egestas sollicitudin
+                    <h2 class="lg:text-4xl font-[Merriweather] font-bold mb-[4px]">Accountability that<br> works for you</h2>
+                    <p class="mt-4 font-[Poppins] leading-[26px]  text-[#888888]">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing<br> elit. Morbi
+                      egestas Werat viverra id et aliquet.<br> vulputate egestas sollicitudin
                       .
                     </p>
                     <button class="btn btn-white mt-6 font-[Poppins] leading-[36px] shadow-[0_15px_34px_rgba(0,0,0,0.1)] mt-8 inline-block h-[52px] pl-8 pr-8 pt-2 pb-2 text-sm font-medium leading-9 min-w-[150px] rounded-[50px] bg-[rgb(255,255,255)]">know about us</button>
@@ -284,13 +300,123 @@
               </div>
             </div>
           </section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
+          <section class="Reviews">
+            <div class="ml-auto mr-auto max-w-[1202px] pl-3 pr-3">
+              <div class="flex justify-between">
+                <div class="w-[50%] font-[Merriweather] font-bold text-4xl leading-[48px]">
+                  <h2>Our customers have nice things to say about us</h2>
+                </div>
+                <div class="w-[40%] flex items-end font-[Poppins] font-normal leading-[26px]">
+                  <p class= " text-[#888888]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas Werat viverra id et aliquet. vulputate egestas sollicitudin .</p>
+                </div>
+              </div>
+            </div>
+            <div class="owl-carousel owl-theme carousel2 owl-carousel owl-theme w-full">
+              <div class="w-[380px] mr-[20px]">
+                <div class="mt-16 mb-16 rounded-xl bg-[rgb(255,255,255)] pl-3 pr-3 pt-6 pb-16 text-center w-full ">
+                  <div class="w-32 h-32 object-cover ml-24">
+                    <img class="" src="/img/user-5.png" alt="">
+                  </div>
+                  <div class="">
+                    <h4 class="mb-2 font-[Merriweather] font-bold leading-[31px] text-[25px] w-full">Courtney Henry</h4>
+                    <p class="mb-4 text-[#666] font-[Poppins] font-normal">microsoft corp</p>
+                    <p class="font-[Poppins] leading-[26px] text-[#888888]">
+                      Our platform helps build secure onboarding authentica
+                      experiences & engage your users. We build .
+                    </p>
+                    <div class="review-rating mt-6 flex items-center justify-center space-x-2.5 w-[70%] pl-[100px] ">
+                      <img src="/img/star.svg" alt="">
+                      <img src="/img/star.svg" alt="">
+                      <img src="/img/star.svg" alt="">
+                      <img src="/img/star.svg" alt="">
+                      <img src="/img/star-white.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="w-[380px] mr-[20px]">
+                <div class="mt-16 mb-16 rounded-xl bg-[rgb(255,255,255)] pl-3 pr-3 pt-6 pb-16 text-center w-full ">
+                  <div class="w-32 h-32 object-cover ml-24">
+                    <img class="" src="/img/user-2.png" alt="">
+                  </div>
+                  <div class="">
+                    <h4 class="mb-2 font-[Merriweather] font-bold leading-[31px] text-[25px] w-full">Courtney Henry</h4>
+                    <p class="mb-4 text-[#666] font-[Poppins] font-normal">microsoft corp</p>
+                    <p class="font-[Poppins] leading-[26px] text-[#888888]">
+                      Our platform helps build secure onboarding authentica
+                      experiences & engage your users. We build .
+                    </p>
+                    <div class="review-rating mt-6 flex items-center justify-center space-x-2.5 w-[70%] pl-[100px] ">
+                      <img src="/img/star.svg" alt="">
+                      <img src="/img/star.svg" alt="">
+                      <img src="/img/star.svg" alt="">
+                      <img src="/img/star.svg" alt="">
+                      <img src="/img/star-white.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="w-[380px] mr-[20px]">
+                <div class="mt-16 mb-16 rounded-xl bg-[rgb(255,255,255)] pl-3 pr-3 pt-6 pb-16 text-center w-full ">
+                  <div class="w-32 h-32 object-cover ml-24">
+                    <img class="" src="/img/user-6.png" alt="">
+                  </div>
+                  <div class="">
+                    <h4 class="mb-2 font-[Merriweather] font-bold leading-[31px] text-[25px] w-full">Courtney Henry</h4>
+                    <p class="mb-4 text-[#666] font-[Poppins] font-normal">microsoft corp</p>
+                    <p class="font-[Poppins] leading-[26px] text-[#888888]">
+                      Our platform helps build secure onboarding authentica
+                      experiences & engage your users. We build .
+                    </p>
+                    <div class="review-rating mt-6 flex items-center justify-center space-x-2.5 w-[70%] pl-[100px] ">
+                      <img src="/img/star.svg" alt="">
+                      <img src="/img/star.svg" alt="">
+                      <img src="/img/star.svg" alt="">
+                      <img src="/img/star.svg" alt="">
+                      <img src="/img/star-white.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              </div>
+            </div>
+          </section>
+
+          
+       
         <footer></footer>
 
     <script src=""></script>
-    
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <!-- OWL JS -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script>
+    $(document).ready(function () {
+      $(".carousel2").owlCarousel({
+        loop: true, //lặp lại các item
+        margin: 5, //khoảng cách giữa các item
+        nav: true, //hiện mũi tên trái phải
+        responsive: {
+          0: {
+            items: 3//số lượng item khi ở màn hình >= 0
+          },
+          576: {
+            items: 3 //số lượng item khi ở màn hình >= 576px
+          }
+        }
+      });
+    });
+  </script>
 </body>
 </html>
